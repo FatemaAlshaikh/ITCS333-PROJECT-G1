@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--- setting for responsiveness --->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+<!---link external stylesheet file --->
+<link rel="stylesheet" href="EventClender.css">
+<!--- title web page --->
+<title>UOB Event Calendar</title>
+</head>
+<body>
+    <!---  header --->
+<header class="header">
+<div class="container padding">
+<div class="head">
+    <!--- social linked for Event UOB --->
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+    </div>
+    <div class="search-container">
+        <span>🔍</span>
+        <input type="text" placeholder="Search for events" aria-label="Search for events">
+        <button>Find Events</button>
+        <div class="links">
+            <a href="#EventList">List</a>
+            <a href="#MonthView">Month</a>
+            <a href="#DayView">Day</a>
+        </div>
+    </div>
+    </div>
+    </header>
+    <!---  section --->
+    <section class="Event" id="Home">
+        <video src="event-video.mp4" loop autoplay muted></video>
+        <div class="container ">
+            <div class="content">
+<!---   navigation --->
+<div class="nav">
+<nav class="padding">
+  <div class="nav-content">
+<h1>UOB EVENT</h1>
+<ul>
+<!--- nav UOB Event--->
+    <li><a href="#home">Home</a></li>
+    <li><a href="#AboutEvent">Event</a></li>
+    <li><a href="#EventCalendar">Event Calendar</a></li>
+    <li><a href="#EventCategories">Event Categories</a></li>
+    <li><a href="#CreateEvent">Create Event</a></li>
+    <li><a href="#CampusBuildings">Campus Buildings</a></li>
+    <li><a href="#EventGallery">Event Gallery</a></li>
+  </ul>
+  </div>
+</nav>
+</div>
+<!-- About Event Section -->
+ <section id="AboutEvent">
+<div class="text">
+    <div class="padding">
+    <h2>Welcome to Campus Hub</h2>
+        <p class="second"> An ideal platform to discover and participate in university events. Follow our events calendar and stay informed to make your university experience more enjoyable and beneficial!</p>
+    </div>
+</div>
+    </section>
+</div>
+</div>
+</section>
+<!-- Event Categories Section -->
+<section class="meetings" id="EventCategories">
+    <div class="image">
+        <img src="meetings.jpg" alt="Students in a meeting">
+    </div>
+    <div class="container padding">
+        <div class="cards">
+         <!-- Online Event Card -->
+            <div class="card">
+                <div class="icon">
+                    <img src="Online-Event.png" alt="Online event icon">
+                </div>
+                <h2>Online Event</h2>
+                <p>Online events provide convenient, accessible platforms for learning, networking, and engaging with others from anywhere, at any time, without geographical limits.</p>
+            </div>
+            <!-- Live Event Card -->
+            <div class="card">
+                <div class="icon">
+                    <img src="Live-Event.png" alt="Live event icon">
+                </div>
+                <h2>Live Event</h2>
+                <p>A live event is an in-person gathering where participants engage directly, experiencing activities, discussions, or performances in real-time at a specific location.</p>
+            </div>
+             <!-- Outside Event Card -->
+            <div class="card">
+                <div class="icon">
+                    <img src="OutSise-Event.png" alt="Off-campus event icon">
+                </div>
+                <h2>Event Outside UOB</h2>
+                <p>An event outside the UOB refers to activities or gatherings held off-campus, offering opportunities for learning, networking, and entertainment beyond the academic environment.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+        <!-- Event Calendar Section -->
+        <section id="EventCalendar">
+            <h2 class="EventCalendar">Event Calendar</h2>
+            <div class="calendar-container">
+              <div class="calendar-header">
+                <button aria-label="Previous Month">&lt;</button>
+                <div class="month-year">April 2025</div>
+                <button aria-label="Next Month">&gt;</button>
+              </div>
+              <div class="calendar-grid">
+                <div class="day-header">Mon</div>
+                <div class="day-header">Tue</div>
+                <div class="day-header">Wed</div>
+                <div class="day-header">Thu</div>
+                <div class="day-header">Fri</div>
+                <div class="day-header">Sat</div>
+                <div class="day-header">Sun</div>
+                <!-- Previous Month Days -->
+                <div class="day" tabindex="0">27</div>
+                <div class="day" tabindex="0">28</div>
+                <div class="day" tabindex="0">29</div>
+                <div class="day" tabindex="0">30</div>
+                <div class="day" tabindex="0">31</div>
+                <!-- Current Month Days -->
+                <div class="day" tabindex="0">1<br><span>Big Data Symposium 2026</span></div>
+                <div class="day" tabindex="0">2</div>
+                <div class="day" tabindex="0">3</div>
+                <div class="day" tabindex="0">4</div>
+                <div class="day" tabindex="0">5</div>
+                <div class="day" tabindex="0">6</div>
+                <div class="day" tabindex="0">7</div>
+                <div class="day" tabindex="0">8</div>
+                <div class="day" tabindex="0">9</div>
+                <div class="day" tabindex="0">10</div>
+                <div class="day" tabindex="0">11</div>
+                <div class="day" tabindex="0">12</div>
+                <div class="day" tabindex="0">13<br><span>ICLAMP2025</span></div>
+                <div class="day" tabindex="0">14<br><span>Mobile App Development Bootcamp</span></div>
+                <div class="day" tabindex="0">15</div>
+                <div class="day" tabindex="0">16</div>
+                <div class="day" tabindex="0">17</div>
+                <div class="day" tabindex="0">18</div>
+                <div class="day" tabindex="0">19</div>
+                <div class="day" tabindex="0">20<br><span>E-learning Workshop</span></div>
+                <div class="day" tabindex="0">21</div>
+                <div class="day" tabindex="0">22</div>
+                <div class="day" tabindex="0">23</div>
+                <div class="day" tabindex="0">24</div>
+                <div class="day" tabindex="0">25</div>
+                <div class="day" tabindex="0">26</div>
+                <div class="day" tabindex="0">27</div>
+                <div class="day" tabindex="0">28<br><span>Cybersecurity Essentials Webinar</span></div>
+                <div class="day" tabindex="0">29</div>
+                <div class="day" tabindex="0">30</div>
+              </div>
+            </div>
+          </section>
+       <!-- Testimonials Section for different meeting categories -->
+    <section id="EventCategories" class="meeting">
+            <h1> Meetings</h1>
+        <div class="testimonials">
+            <div class="first">
+                <h2>Meeting Categories</h2>
+                  <!-- Links to different event categories -->
+                <ul>
+                    <li><a href="#OnlineEvents">Online Event</a></li>
+                    <li><a href="#LiveEvents">Live Event</a></li>
+                    <li><a href="#OutsideEvents">OutSise Event</a></li>
+                </ul>
+            </div>
+            <!-- Second Section: Upcoming Events with Dates and Descriptions -->
+            <div class="second">
+                <div class="test">
+                    <img src="meeting-01.png" alt="Physics Symposium">
+                    <div class="inner">
+                        <div class="date">
+                            <h2>June</h2>
+                            <p>28</p>
+                        </div>
+                        <div class="text">
+                            <h2>Physics Advances Symposium 2025</h2>
+                            <p>A virtual event featuring discussions on modern Physics research and innovations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="test">
+                    <img src="meeting-02.png" alt="Big Data Symposium">
+                    <div class="inner">
+                        <div class="date">
+                            <h2>April</h2>
+                            <p>1</p>
+                        </div>
+                        <div class="text">
+                            <h2>Big Data Symposium 2026</h2>
+                            <p>Brought experts and Decision-makers in IT to discuss big data challenges</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="test">
+                    <img src="meeting-03.png" alt="3ICT 2024 Conference">
+                    <div class="inner">
+                        <div class="date">
+                            <h2>Dec</h2>
+                            <p>20</p>
+                        </div>
+                        <div class="text">
+                            <h2>3ICT 2024 Conference</h2>
+                            <p>The conference explored areas including artificial intelligence , cybersecurity and blockchain technology</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="test">
+                    <img src="Tech-Expo.webp" alt="Tech Expo 2025">
+                    <div class="inner">
+                        <div class="date">
+                            <h2>May</h2>
+                            <p>5</p>
+                        </div>
+                        <div class="text">
+                            <h2>Tech Expo 2025</h2>
+                            <p>Showcasing innovative technology trends and emerging startups to connect industry leaders and enthusiasts.</p>
+                        </div>
+                    </div>
+                </div>                
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<!-- Online Event Section -->
+<section id="OnlineEvents" class="event-section">
+    <div class="container padding">
+      <h2 class="section-title">Online Events</h2>
+      <div class="cards">
+        <!-- Event Card 1 -->
+        <div class="card">
+          <img src="meeting-04.png" alt="Web Development Bootcamp">
+          <div class="card-content">
+            <div class="date">
+              <h3>May</h3>
+              <p>17</p>
+            </div>
+            <h3>Web Development Bootcamp</h3>
+            <p>A comprehensive online Bootcamp for aspiring developers.</p>
+          </div>
+        </div>
+        <!-- Event Card 2 -->
+        <div class="card">
+          <img src="meeting-05.jpg" alt="Research Skills and Methodologies">
+          <div class="card-content">
+            <div class="date">
+              <h3>April</h3>
+              <p>25</p>
+            </div>
+            <h3>Research Skills and Methodologies Session</h3>
+            <p>Develop essential research skills, collection methods, analysis techniques and academic writing.</p>
+          </div>
+        </div>
+        <!-- Event Card 3 -->
+        <div class="card">
+          <img src="meeting-06.jpg" alt="Cybersecurity Essentials">
+          <div class="card-content">
+            <div class="date">
+              <h3>April</h3>
+              <p>28</p>
+            </div>
+            <h3>Cybersecurity Essentials Webinar</h3>
+            <p>Learn about common online threats and how to protect data.</p>
+          </div>
+        </div>
+        <!-- Event Card 4 -->
+        <div class="card">
+          <img src="meeting-07.jpg" alt="E-learning Workshop">
+          <div class="card-content">
+            <div class="date">
+              <h3>April</h3>
+              <p>20</p>
+            </div>
+            <h3>E-learning Workshop</h3>
+            <p>Explore top tools and practices for effective online learning.</p>
+          </div>
+        </div>
+        <!-- Event Card 5 -->
+        <div class="card">
+          <img src="meeting-08.webp" alt="Ethical Hacking">
+          <div class="card-content">
+            <div class="date">
+              <h3>May</h3>
+              <p>12</p>
+            </div>
+            <h3>Ethical Hacking and Penetration Testing</h3>
+            <p>Discover ethical hacking practices and testing techniques.</p>
+          </div>
+        </div>
+        <!-- Event Card 6 -->
+        <div class="card">
+          <img src="meeting-09.jpg" alt="Mental Health Webinar">
+          <div class="card-content">
+            <div class="date">
+              <h3>May</h3>
+              <p>1</p>
+            </div>
+            <h3>Student Mental Health Awareness Webinar</h3>
+            <p>Focus on emotional well-being during exams with UOB counseling services.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+<!-- Live Event Section -->
+<section id="LiveEvents" class="event-section">
+    <div class="container padding">
+      <h2 class="section-title">Live Events</h2>
+      <div class="cards">
+        <!-- Event Card 1 -->
+        <div class="card">
+          <img src="meeting-10.webp" alt="UOB Cultural Festival">
+          <div class="card-content">
+            <div class="date">
+              <h3>May</h3>
+              <p>30</p>
+            </div>
+            <h3>UOB Cultural Festival</h3>
+            <p>Investors and business experts discussing how to launch and grow a successful business.</p>
+          </div>
+          <span>UOB Business College</span>
+        </div>
+        <!-- Event Card 2 -->
+        <div class="card">
+          <img src="meeting-11.jpg" alt="Health & Wellness Day">
+          <div class="card-content">
+            <div class="date">
+              <h3>May</h3>
+              <p>8</p>
+            </div>
+            <h3>Health & Wellness Day</h3>
+            <p>A day dedicated to fitness and mental health, including free health check-ups and workshops on healthy living.</p>
+          </div>
+          <span>Sport Hall (S4)</span>
+        </div>
+        <!-- Event Card 3 -->
+        <div class="card">
+          <img src="meeting-12.jpg" alt="UOB Marathon">
+          <div class="card-content">
+            <div class="date">
+              <h3>May</h3>
+              <p>5</p>
+            </div>
+            <h3>UOB Marathon</h3>
+            <p>Participate in the UOB Marathon and test your endurance. Top winners will receive medals and appreciation awards.</p>
+          </div>
+          <span>UOB Track</span>
+        </div>
+        <!-- Event Card 4 -->
+        <div class="card">
+          <img src="meeting-13.jpg" alt="Mobile App Development Bootcamp">
+          <div class="card-content">
+            <div class="date">
+              <h3>April</h3>
+              <p>14</p>
+            </div>
+            <h3>Mobile App Development Bootcamp</h3>
+            <p>A hands-on bootcamp where students will learn to develop Android and iOS apps using Flutter and React Native.</p>
+          </div>
+          <span>IT College Open Lab (1002)</span>
+        </div>
+        <!-- Event Card 5 -->
+        <div class="card">
+          <img src="meeting-14.png" alt="AI & Machine Learning">
+          <div class="card-content">
+            <div class="date">
+              <h3>May</h3>
+              <p>12</p>
+            </div>
+            <h3>AI & Machine Learning</h3>
+            <p>Interactive session on artificial intelligence and machine learning, featuring student projects and demonstrations of the latest AI technologies.</p>
+          </div>
+          <span>Conference Hall</span>
+        </div>
+        <!-- Event Card 6 -->
+        <div class="card">
+          <img src="meeting-15.webp" alt="Cloud Computing & Digital Storage Seminar">
+          <div class="card-content">
+            <div class="date">
+              <h3>June</h3>
+              <p>5</p>
+            </div>
+            <h3>Cloud Computing & Digital Storage Seminar</h3>
+            <p>A seminar on the latest trends in cloud computing and its impact on businesses and digital transformation, featuring industry experts.</p>
+          </div>
+          <span>IT College Open Lab (2002)</span>
+        </div>
+      </div>
+    </div>
+  </section>  
+<!-- Outside Event Section -->
+<section id="OutsideEvents" class="event-section">
+    <div class="container padding">
+      <h2 class="section-title">Outside Events</h2>
+      <div class="cards">
+        <!-- Event Card 1 -->
+        <div class="card">
+          <img src="meeting-16.webp" alt="Bahrain Tech Week 2025">
+          <div class="card-content">
+            <div class="date">
+              <h3>April</h3>
+              <p>18-20</p>
+            </div>
+            <h3>Bahrain Tech Week 2025</h3>
+            <p>A major technology conference featuring discussions on AI, cybersecurity, and cloud computing with industry experts and global companies.</p>
+          </div>
+          <span>Exhibition World Bahrain</span>
+        </div>
+        <!-- Event Card 2 -->
+        <div class="card">
+          <img src="meeting-17.jpeg" alt="Gitex Bahrain">
+          <div class="card-content">
+            <div class="date">
+              <h3>May</h3>
+              <p>5-7</p>
+            </div>
+            <h3>Gitex Bahrain</h3>
+            <p>A technology exhibition showcasing the latest advancements in IT, smart cities, fintech, and startups.</p>
+          </div>
+          <span>Bahrain International Exhibition & Convention Centre</span>
+        </div>
+        <!-- Event Card 3 -->
+        <div class="card">
+          <img src="meeting-18.png" alt="Bahrain Cybersecurity Summit">
+          <div class="card-content">
+            <div class="date">
+              <h3>May</h3>
+              <p>15</p>
+            </div>
+            <h3>Bahrain Cybersecurity Summit</h3>
+            <p>A conference dedicated to cybersecurity threats, ethical hacking, and protecting digital assets.</p>
+          </div>
+          <span>Gulf Hotel Bahrain</span>
+        </div>
+        <!-- Event Card 4 -->
+        <div class="card">
+          <img src="meeting-19.png" alt="International Conference on AI, Energy and Manufacturing Engineering">
+          <div class="card-content">
+            <div class="date">
+              <h3>October</h3>
+              <p>24</p>
+            </div>
+            <h3>International Conference on AI, Energy, and Manufacturing Engineering</h3>
+            <p>Discusses AI, energy systems, and manufacturing innovations and challenges.</p>
+          </div>
+          <span>(Venue to be announced)</span>
+        </div>
+        <!-- Event Card 5 -->
+        <div class="card">
+          <img src="meeting-20.png" alt="International Conference on Leadership and Management of Projects in the Digital Age">
+          <div class="card-content">
+            <div class="date">
+              <h3>April</h3>
+              <p>13-14</p>
+            </div>
+            <h3>International Conference on Leadership and Management of Projects in the Digital Age (ICLAMP 2025)</h3>
+            <p>Focuses on technology, innovation, and entrepreneurship with an emphasis on sustainability.</p>
+          </div>
+          <span>Applied Science University</span>
+        </div>
+              <!-- Event Card 6 -->
+<div class="card">
+    <img src="meeting-21.png" alt="Global Symposium on Artificial Intelligence and Robotics">
+    <div class="card-content">
+      <div class="date">
+        <h3>May</h3>
+        <p>5-6</p>
+      </div>
+      <h3>Global Symposium on Artificial Intelligence and Robotics (GSAIR 2025)</h3>
+      <p>Exploring the latest advancements in AI, robotics, and machine learning, with a focus on ethical considerations and industry applications.</p>
+    </div>
+    <span>University of Technology</span>
+  </div>
+      </div>
+    </div>
+  </section>  
+<section class="event-slider">
+    <div class="container">
+        <div class="head">
+            <h2>Featured Events</h2>
+        </div>
+        <div class="slider">
+            <div class="slide">
+                <img src="course-01.png" alt="Bahrain Cybersecurity Forum 2025">
+                <h3>Bahrain cybersecurity Forum 2025</h3>
+                <p>A conference featuring cybersecurity experts discussing the latest digital threats and protection solutions</p>
+                <div class="event-details">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <p>$26.53</p>
+                    </div>
+                    <button type="submit">Register</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="course-02.jpg" alt="Bahrain Smart Cities Summit 2025">
+                <h3>Bahrain smart Cities Summit 2025</h3>
+                <p>Discusses advancements in smart cities IoT and sustainable technologies</p>
+                <div class="event-details">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <p>$53.05</p>
+                    </div>
+                    <button type="submit">Register</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="course-03.jpg" alt="AI & Data Analysis Conference 2025">
+                <h3>Al & Data Analysis Conference 2025</h3>
+                <p>Session and workshop on the use of Al in data analytics and future predictions</p>
+                <div class="event-details">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <p>$39.79</p>
+                    </div>
+                    <button type="submit">Register</button>
+                </div>
+            </div>
+       </div>
+    </div>
+</section>
+<!-- Attend the Event Section -->
+<section id="Attend-Event" class="attend-event">
+    <h2>Attend the Event</h2>
+    <form action="submit_form.php" method="POST" class="event-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone">
+  
+      <label for="event">Event Name:</label>
+      <input type="text" id="event" name="event" required>
+  
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments" name="comments" rows="4"></textarea>
+  
+      <button type="submit" class="btn">Register</button>
+    </form>
+  </section>
+  
+  <!-- Add New Event Section -->
+  <section id="CreateEvent" class="create-event">
+    <h2>Add New Event</h2>
+    <form action="#" method="post" enctype="multipart/form-data" class="event-form">
+      <label for="event-name">Event Name:</label>
+      <input type="text" id="event-name" name="event-name" required>
+  
+      <label for="event-date">Event Date:</label>
+      <input type="date" id="event-date" name="event-date" required>
+  
+      <label for="event-time">Event Time:</label>
+      <input type="time" id="event-time" name="event-time" required>
+  
+      <label for="event-type">Event Type:</label>
+      <select id="event-type" name="event-type" required>
+        <option value="online">Online at the University of Bahrain</option>
+        <option value="on-campus">In-person at the University of Bahrain</option>
+        <option value="off-campus">Event outside the University</option>
+      </select>
+  
+      <label for="contact-info">Contact Information:</label>
+      <input type="email" id="contact-info" name="contact-info" placeholder="Enter contact email" required>
+  
+      <label for="event-image">Event Image:</label>
+      <input type="file" id="event-image" name="event-image" accept="image/*">
+  
+      <label for="event-description">Event Description:</label>
+      <textarea id="event-description" name="event-description" rows="4" required></textarea>
+  
+      <input type="submit" value="Add Event" class="btn">
+    </form>
+  </section>
+  <!-- College websites to book an event venue -->
+  <section id="CampusBuildings" class="campus-container">
+    <div class="campus-content">
+      <aside class="campus-sections">
+        <h2>Sakhir Campus Buildings</h2>
+        <div class="campus-cards">
+          <div class="campus-card">
+            <ul>
+              <li>• College of Arts - S1A</li>
+              <li>• College of Applied Studies - S20B & S20C</li>
+              <li>• Bahrain Teachers College - S22</li>
+              <li>• College of Business Administration - S1B</li>
+              <li>
+                • College of Engineering:
+                <ul>
+                  <li>– Architecture & Interior Design - S17</li>
+                  <li>– Electrical Engineering - S40</li>
+                  <li>– Civil Engineering - S41</li>
+                </ul>
+              </li>
+              <li>• College of Information Technology - S40</li>
+              <li>• College of Law - S39</li>
+              <li>• College of Science - S41</li>
+              <li>
+                • College of Health & Sport Sciences:
+                <ul>
+                  <li>– Physical Education - S20A</li>
+                </ul>
+              </li>
+              <li>• Administration Building - S2</li>
+              <li>• Central Library - S3</li>
+              <li>• Deanship of Admission & Registration - S37</li>
+              <li>• E-Learning Center - S45</li>
+              <li>• Health Club & Swimming Pool - S38</li>
+              <li>• Media Center - S44</li>
+              <li>• Mosque - S6</li>
+              <li>• Sport Hall & Main Food Court - S4</li>
+              <li>• English Language Center - S20</li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+  
+      <div class="campus-map">
+        <img src="https://uobhomesiteprod.s3.me-south-1.amazonaws.com/site-prod/uploads/UoBMapKey.png" alt="Sakhir Campus Map">
+      </div>
+    </div>
+  </section>  
+  <!-- Event Gallery Section -->
+  <section id="EventGallery" class=" Gallery-container">
+    <h2>Event Gallery</h2>
+    <div class="event-gallery">
+      <div class="event-card">
+        <img src="event1.jpg" alt="Event 1">
+      </div>
+      <div class="event-card">
+        <img src="event2.jpg" alt="Event 2">
+      </div>
+<div class="event-card">
+<img src="event3.jpg" alt="Event 3">
+</div>
+<div class="event-card">
+<img src="event4.jpeg" alt="Event 4">
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer>
+<div class="footer-content">
+<h1>Contact Us</h1>
+<p>Email: EventClender-G1@gmail.com</p>
+<p>Phone: +973 3456 7898</p>
+<p>Website: <a href="http://www.EventClender-G1" target="_blank">www.EventClender-G1</a></p>
+<p>&copy; 2025 UOB Event Calendar. All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>
