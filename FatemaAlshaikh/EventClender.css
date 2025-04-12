@@ -729,8 +729,8 @@ footer a:hover {
         gap: 1rem;}}
 @media (max-width: 992px) {
     .Event .container .content .text {
-        max-width: 90%;
-        margin: 5rem auto;}
+    max-width: 90%;
+    margin: 5rem auto;}
     .meetings .cards {
         gap: 2rem;}
     .meeting .testimonials {
