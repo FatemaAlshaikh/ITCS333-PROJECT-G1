@@ -1,2 +1,0 @@
-# ITCS333-PROJECT-G1
-As0-90 202110329 student marketplace
