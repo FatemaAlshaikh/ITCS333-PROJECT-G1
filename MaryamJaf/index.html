@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Course Reviews</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Course Reviews</h1>
+  </header>
+
+  <main>
+    <section class="controls">
+      <input type="search" placeholder="Search courses...">
+      <select>
+        <option>Filter by Department</option>
+      </select>
+      <select>
+        <option>Sort by Rating</option>
+        <option>Sort by Name</option>
+      </select>
+      <button class="add-btn">+ Add New Review</button>
+    </section>
+
+    <section class="reviews-grid">
+      <article class="review-card">
+        <h2>CS333 - Intro to Programming</h2>
+        <p>Rating: ★★★★☆</p>
+        <p>“Great foundation course!”</p>
+        <a href="detail.html">View Details</a>
+      </article>
+      <!-- Repeat as needed -->
+    </section>
+
+    <nav class="pagination">
+      <button>&laquo; Prev</button>
+      <button>Next &raquo;</button>
+    </nav>
+  </main>
