@@ -1,0 +1,65 @@
+<!-- mainListing.html --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 ">
+  <title >Student Marketplace</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container py-5">
+  <h1 class="mb-4 text-center " style="font-style: normal; color: rgb(48, 6, 145); "><strong>Student Marketplace</strong> </h1>
+
+<!-- Search Bar -->
+<div class="mb-4">
+  <input type="text" class="form-control" placeholder="Search Items....">
+</div>
+
+<!-- Sorting Controls -->
+<div class="mb-4">
+ <label class="form-label me-2">Sort by:</label>
+
+ <select class="form-select w-auto d-inline-block">
+  <option value="price-asc">Price (Low to High)</option>
+  <option value="price-desc">Price (High to Low)</option>
+  <option value="newest">Newest</option>
+ </select>
+</div>
+
+<!-- Items Grid -->
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<!-- Example Item --> 
+
+<div class="col">
+  <div class="card text-center mx-auto" style="width: 25rem;">
+    <img src="usedLaptop.png" class="card-img-top" alt="Used Laptop" style="height: 300px; width: 100%; object-fit: contain; background-color: #f8f9fa;">
+    <div class="card-body">
+      <h5 class="card-title">Used Laptop</h5>
+      <p class="card-text text-muted">Price: 180 BD</p>
+      <a href="itemDetail.html" class="btn btn-outline-primary">View Details</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Pagination -->
+<div class="text-center ">
+  <button class="btn btn-secondary">Previous</button>
+  <button class="btn btn-primary">Next</button>
+</div>
+
+<!-- Add New Item Link -->
+<div class="mt-4">
+  <div class="card text-center border-success">
+    <div class="card-body">
+      <h5 class="card-title text-dark">Got something to sell?</h5>
+      <a href="itemCreate.html" class="btn btn-success">Add New Item</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html> 
+
