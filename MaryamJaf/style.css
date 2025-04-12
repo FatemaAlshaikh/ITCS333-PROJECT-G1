@@ -1,0 +1,106 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  input[type="search"], select {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .add-btn {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+  
+  .review-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: #f9f9f9;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+  
+  .form-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .detail-view {
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .comments {
+    margin-top: 2rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .controls {
+      flex-direction: column;
+    }
+  
+    .form-actions {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .actions {
+      flex-direction: column;
+    }
+  }
