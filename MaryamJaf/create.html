@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Add Course Review</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="form-container">
+    <h1>Add a New Course Review</h1>
+    <form>
+      <label for="course">Course Code</label>
+      <input type="text" id="course" name="course" required>
+
+      <label for="title">Review Title</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="rating">Rating</label>
+      <select id="rating" name="rating" required>
+        <option value="">Choose...</option>
+        <option value="5">★★★★★</option>
+        <option value="4">★★★★☆</option>
+        <option value="3">★★★☆☆</option>
+      </select>
+
+      <label for="content">Review Content</label>
+      <textarea id="content" name="content" rows="5" required></textarea>
+
+      <div class="form-actions">
+        <button type="submit">Submit Review</button>
+        <a href="index.html">Cancel</a>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
