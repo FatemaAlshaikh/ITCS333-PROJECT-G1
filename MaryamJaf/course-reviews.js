@@ -59,3 +59,26 @@ function renderReviews() {
     });
 }
 
+// Show single review detail
+function showReviewDetail(review) {
+    alert(`Review by ${review.name}\n\n${review.body}`);
+}
+
+// Search and filter
+function getFilteredReviews() {
+    const searchText = searchInput.value.toLowerCase();
+    let filtered = reviewsData.filter(review =>
+        review.name.toLowerCase().includes(searchText) ||
+        review.body.toLowerCase().includes(searchText)
+    );
+
+    // Sorting
+    const sortValue = sortSelect.value;
+    if (sortValue === 'name-asc') {
+        filtered.sort((a, b) => a.name.localeCompare(b.name));
+    } else if (sortValue === 'name-desc') {
+        filtered.sort((a, b) => b.name.localeCompare(a.name));
+    }
+
+    return filtered;
+}
