@@ -82,3 +82,30 @@ function getFilteredReviews() {
 
     return filtered;
 }
+// Pagination
+function getPaginatedReviews(reviews) {
+    const start = (currentPage - 1) * reviewsPerPage;
+    const end = start + reviewsPerPage;
+    return reviews.slice(start, end);
+}
+
+function renderPagination() {
+    const filteredReviews = getFilteredReviews();
+    const pageCount = Math.ceil(filteredReviews.length / reviewsPerPage);
+
+    paginationContainer.innerHTML = "";
+
+    for (let i = 1; i <= pageCount; i++) {
+        const pageButton = document.createElement('button');
+        pageButton.textContent = i;
+        pageButton.className = (i === currentPage) ? 'active' : '';
+        pageButton.addEventListener('click', () => {
+            currentPage = i;
+            renderReviews();
+            renderPagination();
+        });
+        paginationContainer.appendChild(pageButton);
+    }
+}
+
+
