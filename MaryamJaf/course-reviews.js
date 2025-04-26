@@ -162,4 +162,5 @@ sortSelect.addEventListener('change', () => {
 
 reviewForm.addEventListener('submit', validateForm);
 
-
+// Initialize
+fetchReviews();
