@@ -1,0 +1,25 @@
+
+[
+    {
+      "id": 1,
+      "name": "Used Laptop",
+      "price": 180,
+      "description": "Condition: Good, lightly used like new. Perfect for students.",
+      "image": "usedLaptop.png"
+    },
+    {
+      "id": 2,
+      "name": "Wireless Headphones",
+      "price": 40,
+      "description": "Almost new, great battery life and sound quality.",
+      "image": "headphones.png"
+    },
+    {
+      "id": 3,
+      "name": "Desk Lamp",
+      "price": 10,
+      "description": "Simple study lamp, barely used.",
+      "image": "lamp.png"
+    }
+  ]
+  
