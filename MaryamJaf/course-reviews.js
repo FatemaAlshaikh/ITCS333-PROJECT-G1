@@ -108,4 +108,8 @@ function renderPagination() {
     }
 }
 
+// Loading Indicator
+function showLoading(isLoading) {
+    loadingIndicator.style.display = isLoading ? 'block' : 'none';
+}
 
