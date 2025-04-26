@@ -33,3 +33,29 @@ async function fetchReviews() {
         showLoading(false);
     }
 }
+
+// Render reviews
+function renderReviews() {
+    const filteredReviews = getFilteredReviews();
+    const paginatedReviews = getPaginatedReviews(filteredReviews);
+
+    reviewsList.innerHTML = "";
+
+    if (paginatedReviews.length === 0) {
+        reviewsList.innerHTML = "<p>No reviews found.</p>";
+        return;
+    }
+
+    paginatedReviews.forEach(review => {
+        const reviewItem = document.createElement('div');
+        reviewItem.className = 'review-item';
+        reviewItem.innerHTML = `
+            <h3>${review.name}</h3>
+            <p><strong>Email:</strong> ${review.email}</p>
+            <p>${review.body}</p>
+        `;
+        reviewItem.addEventListener('click', () => showReviewDetail(review));
+        reviewsList.appendChild(reviewItem);
+    });
+}
+
