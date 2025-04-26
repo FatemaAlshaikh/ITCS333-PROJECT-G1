@@ -112,4 +112,54 @@ function renderPagination() {
 function showLoading(isLoading) {
     loadingIndicator.style.display = isLoading ? 'block' : 'none';
 }
+// Form Validation
+function validateForm(event) {
+    event.preventDefault();
+    formErrors.innerHTML = "";
+
+    const name = reviewForm.elements['name'].value.trim();
+    const email = reviewForm.elements['email'].value.trim();
+    const reviewText = reviewForm.elements['review'].value.trim();
+
+    let errors = [];
+
+    if (name.length < 3) {
+        errors.push("Name must be at least 3 characters.");
+    }
+    if (!validateEmail(email)) {
+        errors.push("Invalid email format.");
+    }
+    if (reviewText.length < 10) {
+        errors.push("Review must be at least 10 characters long.");
+    }
+
+    if (errors.length > 0) {
+        formErrors.innerHTML = errors.map(e => `<p>${e}</p>`).join('');
+    } else {
+        alert("Form is valid! (In real app, it would be submitted)");
+        reviewForm.reset();
+    }
+}
+
+// Email Validation Helper
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
+
+// Event Listeners
+searchInput.addEventListener('input', () => {
+    currentPage = 1;
+    renderReviews();
+    renderPagination();
+});
+
+sortSelect.addEventListener('change', () => {
+    currentPage = 1;
+    renderReviews();
+    renderPagination();
+});
+
+reviewForm.addEventListener('submit', validateForm);
+
 
