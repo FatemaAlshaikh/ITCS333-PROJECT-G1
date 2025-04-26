@@ -1,0 +1,79 @@
+/* style.css */
+
+/* General */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(90deg, #007bff, #6610f2);
+  color: white;
+  padding: 40px 0;
+}
+
+/* Rectangle Box */
+.rectangle-box {
+  background: #d1e7dd;
+  color: #0f5132;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+/* Navbar */
+.navbar {
+  margin-bottom: 30px;
+}
+
+/* Main Content */
+.main-content {
+  padding: 20px;
+}
+
+/* Cards */
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Form */
+.required::after {
+  content: "*";
+  color: red;
+  margin-left: 5px;
+}
+
+form .form-control:focus {
+  border-color: #6610f2;
+  box-shadow: 0 0 5px rgba(102, 16, 242, 0.5);
+}
+
+/* Pagination */
+.pagination .page-item.active .page-link {
+  background-color: #6610f2;
+  border-color: #6610f2;
+}
+
+/* Footer */
+.footer {
+  background: #343a40;
+  color: white;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
