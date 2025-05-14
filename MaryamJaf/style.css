@@ -1,106 +1,163 @@
 /* Global Styles */
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header, footer {
-    background: #003366;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  main {
-    padding: 1rem;
-  }
-  
-  .controls {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    align-items: center;
-    margin-bottom: 2rem;
-  }
-  
-  input[type="search"], select {
-    padding: 0.5rem;
-    font-size: 1rem;
-  }
-  
-  .add-btn {
-    background-color: #0077cc;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-  }
-  
-  .reviews-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem;
-  }
-  
-  .review-card {
-    border: 1px solid #ddd;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    background: #f9f9f9;
-  }
-  
-  .pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-    gap: 1rem;
-  }
-  
-  .form-container {
-    max-width: 600px;
-    margin: 2rem auto;
-    padding: 1rem;
-  }
-  
-  form {
-    display: flex;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.6rem;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header and Footer */
+header, footer {
+  background-color: #003366;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1, footer h1 {
+  font-size: 2.5rem;
+}
+
+footer p {
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+}
+
+/* Controls Section */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 3rem;
+  justify-content: center;
+}
+
+input[type="search"], select {
+  padding: 1rem;
+  font-size: 1.4rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  outline: none;
+  width: 200px;
+}
+
+.add-btn {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #005fa3;
+}
+
+/* Grid Layout for Reviews */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Review Card Styling */
+.review-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.pagination button {
+  padding: 0.8rem 1.6rem;
+  font-size: 1.2rem;
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #001f4d;
+}
+
+/* Form Container */
+.form-container {
+  max-width: 700px;
+  margin: 3rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Detail View */
+.detail-view {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Actions Bar */
+.actions {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.comments {
+  margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .controls, .form-actions, .actions {
     flex-direction: column;
-    gap: 1rem;
+    align-items: stretch;
   }
-  
-  .form-actions {
-    display: flex;
-    justify-content: space-between;
+
+  input[type="search"], select {
+    width: 100%;
   }
-  
-  .detail-view {
-    max-width: 800px;
-    margin: auto;
-    padding: 1rem;
-  }
-  
-  .actions {
-    display: flex;
-    gap: 1rem;
-    margin: 1rem 0;
-  }
-  
-  .comments {
-    margin-top: 2rem;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 600px) {
-    .controls {
-      flex-direction: column;
-    }
-  
-    .form-actions {
-      flex-direction: column;
-      gap: 1rem;
-    }
-  
-    .actions {
-      flex-direction: column;
-    }
-  }
+}
