@@ -1,5 +1,5 @@
 <?php
-// Database configuration
+// Database configuration 
 $config = [
 'host' => 'localhost',
 'dbname' => 'campus_hub',

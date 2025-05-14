@@ -6,6 +6,7 @@
   </head>
   <body>
 <?php
+    // Connect to MySQL database
   $host = "127.0.0.1";
   $user = getenv("db_user");
   $pass = getenv("db_pass");
