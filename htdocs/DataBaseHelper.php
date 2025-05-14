@@ -111,6 +111,7 @@ class DatabaseHelper {
         $stmt->execute([':keyword' => '%' . $keyword . '%']);
         return $stmt->fetchAll();
     }
+    
     // Get all attendees registered for a specific event
     public function getAttendeesByEvent($eventId) {
         $sql = "SELECT * FROM attendees WHERE event_id = :event_id";
