@@ -1,5 +1,6 @@
 // Base URL of the PHP backend API
 const API_BASE = "https://aed35cbb-3531-4de2-96c8-b21d7b191527-00-1l2ypr9ke580q.pike.replit.dev/Api.php";
+
 // Define event sections: Online, Live, and Outside, each with separate state tracking
 const sections = [
   { id: "OnlineEvents", label: "Online Events", data: [], originalData: [], filtered: [], currentPage: 1 },
