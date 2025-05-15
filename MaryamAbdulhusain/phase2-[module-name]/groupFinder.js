@@ -107,6 +107,40 @@ document.addEventListener('DOMContentLoaded', () => {
     currentPage = 1;
     renderGroups();
   });
+document.addEventListener("DOMContentLoaded", () => {
+  const searchButton = document.querySelector(".search-button");
+  const searchInput = document.querySelector(".search-bar input");
+  const groups = document.querySelectorAll(".group");
+
+  searchButton.addEventListener("click", () => {
+    const query = searchInput.value.trim().toUpperCase();
+
+    groups.forEach(group => {
+      const course = group.dataset.course.toUpperCase();
+      group.style.display = course.includes(query) ? "block" : "none";
+    });
+  });
+});
+  const resetButton = document.querySelector(".reset-button");
+resetButton.addEventListener("click", () => {
+  searchInput.value = "";
+  groups.forEach(group => group.style.display = "block");
+});
+
+  document.addEventListener("DOMContentLoaded", () => {
+  const searchButton = document.querySelector(".search-button");
+  const searchInput = document.querySelector(".search-input");
+  const groups = document.querySelectorAll(".group");
+
+  searchButton.addEventListener("click", () => {
+    const query = searchInput.value.trim().toUpperCase();
+
+    groups.forEach(group => {
+      const course = group.dataset.course.toUpperCase();
+      group.style.display = course.includes(query) ? "block" : "none";
+    });
+  });
+});
 
   fetchGroups();
 });
